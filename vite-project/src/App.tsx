@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Fetch from "./Fetch"
+import FetchUser from "./assets/FetchUser"
+import NormalFecth from "./assets/NormalFecth"
 
 
 const App = () => {
@@ -12,6 +14,8 @@ const App = () => {
         <option value="Household">Household</option>
       </select>
       <Fetch selectedvalue={selectedvalue}/>
+      <FetchUser/>
+      <NormalFecth/>
     </div>
   )
 }
